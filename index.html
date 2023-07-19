@@ -1,0 +1,121 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Editor de memes</title>
+        <script src="https://kit.fontawesome.com/7d206fa834.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section>
+            <h2>TEXTO</h2>
+            <form>
+                <textarea placeholder="TOP TEXT"></textarea>
+                <label>
+                    <input type="checkbox"> Sin texto superior
+                </label>
+                <label for="inferior">INFERIOR</label>
+                <textarea name="inferior"  placeholder="BOTTOM TEXT"></textarea>
+                <label>
+                    <input type="checkbox"> Sin texto inferior
+                </label>
+                <label for="fuente">FUENTE</label>
+                    <select name="fuente">
+                        <option value="arial">Arial</option>
+                        <option value="arialblack">Arial Black</option>
+                        <option value="american">American Typewriter</option>
+                        <option value="andale">Andale mono</option>
+                        <option value="comic">Comic Sans MS</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact" disabled selected>Impact</option>
+                        <option value="vermana">Vermana</option>
+                        <option value="times">Times New Romans</option>
+                    </select>
+                <label>
+                    <input type="number">
+                </label>
+                <button></button>
+                <button></button>
+                <button></button>
+                
+            </form> 
+        </section>
+        <div class="container-header-main">
+            <header>
+                <h1>GENERADOR DE MEMES</h1>
+                <nav>
+                    <span>
+                        <i class="fa-solid fa-file-image"></i>Imagen
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-font"></i>Texto
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-lightbulb"></i>Modo oscuro
+                    </span>
+                </nav>
+            </header>
+            <main>
+                <button value="Descargar meme"></button>
+            </main>
+        </div>
+        <section>
+            <h2>IMAGEN</h2>
+            <form>
+                <label for="url"> 
+                    URL
+                </label>
+                <input name="url" type="text">
+                <label for="fondo">
+                    FONDO
+                </label>
+                <input name="fondo" type="color">
+                FILTROS
+                <label for="brillo">
+                    BRILLO
+                </label>
+                <input name="brillo" type="range">
+                <label for="opacidad">
+                    OPACIDAD 
+                </label>
+                <input name="opacidad" type="range">
+                <label for="contraste">
+                    CONTRASTE
+                </label>
+                <input name="contraste" type="range">
+                <label for="desenfoque">
+                    DESENFOQUE
+                </label>
+                <input name="desenfoque" type="range">
+                <label for="escala">
+                    ESCALA DE GRISES
+                </label>
+                <input name="escala" type="range">
+                <label for="sepia">
+                    SEPIA
+                </label>
+                <input name="sepia" type="range">
+                <label for="hue">
+                    HUE
+                </label>
+                <input name="hue" type="range">
+                <label for="saturado">
+                    SATURADO
+                </label>
+                <input name="saturado" type="range">
+                <label for="negativo">
+                    NEGATIVO
+                </label>
+                <input name="negativo" type="range">
+                
+            </form>
+            <button value="Reestablecer filtros"></button>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
+    
+    </html>
