@@ -1,21 +1,110 @@
 body {
     margin: 0%;
     display: flex;
+    height: 100vh;
+    
 }
 
-.container-header-main {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-}
+
 section {
-    width: 25%;
+    background-color: #c16ec1;
+    color: #234a34;
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
+
+/* IMAGEN */
 
 form {
     display: flex;
     flex-direction: column;
+}
+
+/* .image-fondo {
+    display: flex;
+    width: 40%;
+} */
+
+.div-fondo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* TEXTO */
+
+.container-color-fondo{
+    display: flex;
+    width: 100%;
+}
+.container-color-fondo div {
+    width: 50%;
+}
+.container-color-fondo input {
+    display: block;
+}
+.container-contorno { 
+    display: flex;
+}
+
+/* MAIN */
+
+.container-header-main {
+    color: #234a34;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+header {
+    background-color: #c16ec1;
+    width: 100%;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+nav span {
+    margin: 2%;
+}
+
+main {
+    background-color: #ed8ded;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-meme {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-meme-text {
+    height: 25%;
+    background-color: white;
+    width: 80%;
+}
+
+.container-image {
+    height: 50%;
+    width: 80%;
+    background-Size : cover;
+    background-repeat : 'no-repeat'
+    background-position: 'center';
+    
+}
+
+.modo-oscuro {
+    color: #97D8B2;
+    background-color:#1e0418 ;
 }
