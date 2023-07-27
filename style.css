@@ -1,15 +1,18 @@
-/* ESTILOS PARA ETIQUETAS */
+/* ESTILOS PARA ETIQUETAS, DE FORMA GENERAL */
 
 body {
-    margin: 0%;
+    margin: 0%;  
+}
+.full-container {
     display: flex;
-    height: 100vh;   
+    height: 100vh;
+    margin: 0;   
 }
 
-/* input {
-    border-radius: 10%;
-    border: solid 1px #9d519d;
-} */
+input {
+    background-color: #a36ca3;
+    border: none;
+} 
 
 section {
     background-color: #9d519d;
@@ -42,9 +45,7 @@ form {
     flex-direction: column;
 }
 #url-input {
-    background-color: #a36ca3;
-    border: none;
-    font-size: 18px;
+    padding: 3%;
 }
 
 .container-image-background{
@@ -53,13 +54,13 @@ form {
     justify-content: space-between;
 }
 
-.input-image-fondo {
+.background-image-input {
     width: 23px;
     height: 23px;
     background-color: transparent;
     border: none;
 }
-.input-image-fondo::-webkit-color-swatch, .input-image-fondo::-webkit-color-swatch-wrapper{
+.background-image-input::-webkit-color-swatch, .background-image-input::-webkit-color-swatch-wrapper{
     border-radius: 100%;
     padding: 0;
 }
@@ -85,24 +86,16 @@ form {
     text-align: right;
 }
 
-section textarea {
-    background-color: #a36ca3;
-    border: none;
-}
-section input {
-    background-color: #a36ca3;
-    border: none;
-}
-section select {
+section textarea , input , select {
     background-color: #a36ca3;
     border: none;
 }
 
-.container-color-fondo{
+.container-background-color{
     display: flex;
     width: 100%;   
 }
-.container-label-color {
+.container-label-color-background {
     width: 50%;
     margin-right: 3%;
 }
@@ -149,14 +142,11 @@ section select {
     }
 }
 
-
 @media (max-width: 940px) {
     section {
         width: 25%;
     }
 }
-
-
 
 /* MAIN */
 
@@ -200,8 +190,8 @@ main button {
     border-radius: 5%;
 }
 
-
 .container-meme {
+    position: relative;
     width: 600px;
     height: 70vh;
     display: flex;
@@ -209,32 +199,24 @@ main button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
-    background-color: transparent;
     flex-wrap: wrap;
 }
 
-/* .container-meme-text {
-    display: flex;
-    
-    width: 80%;
-     */
-/* } */
 .container-meme p {
+    position: static;
     background-color: white;
     width: 80%;
     font-size: 40px;
     margin: 0;
-    
 }
 
 .container-image {
     background-color: #1e0418;
     width: 80%;
+    flex-grow: 1;
     background-Size : cover;
     background-repeat : 'no-repeat';
-    background-position : 'center';
-    flex-grow: 1;
+    background-position : 'center'; 
 }
 
 @media (max-width: 668px) {
@@ -257,7 +239,6 @@ main button {
         margin-top: 7%;
     }
     }
-
 
 .display-none {
     display: none;
