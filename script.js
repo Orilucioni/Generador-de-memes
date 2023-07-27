@@ -19,11 +19,15 @@ const asideImage = document.getElementById('aside-image');
 // ----FUNCION PARA CERRAR ASIDES---
 
 const buttonIconX = document.getElementById('button-icon-x');
+const buttonIconClose = document.getElementById('button-icon-close')
 buttonIconX.addEventListener('click', () => closeAside())
+buttonIconClose.addEventListener('click', () => closeAsideText())
 
 const closeAside = () => {
-    asideText.classList.add("display-none")
     asideImage.classList.add("display-none")    
+}
+const closeAsideText = () => {
+    asideText.classList.add("display-none")    
 }
 
 // ---FUNCION INSERTAR URL DE IMAGEN---
@@ -263,13 +267,20 @@ buttonOutlineNone.addEventListener("click", () => outlineTextNone());
 buttonOutlineLigth.addEventListener("click", () => outlineTextLigth());
 buttonOutlineDark.addEventListener("click", () => outlineTextDark());
     const outlineTextDark = () => {
-        topText.style.outline = 'black'
- }
-    const outlineTextNone = () => {
-     topText.style.outline = 'none'
+        topText.style.webkitTextStrokeColor = 'black'
+        topText.style.webkitTextStrokeWidth = '3px'
+        bottomText.style.webkitTextStrokeColor = 'black'
+        topText.style.webkitTextStrokeWidth = '3px'
  }
     const outlineTextLigth = () => {
-     topText.style.outline = 'white'
+        topText.style.webkitTextStrokeColor = 'white'
+        topText.style.webkitTextStrokeWidth = '3px'
+        bottomText.style.webkitTextStrokeColor = 'white'
+        topText.style.webkitTextStrokeWidth = '3px'
+ }
+    const outlineTextNone = () => {
+     topText.style.webkitTextStroke = 'transparent'
+     bottomText.style.webkitTextStroke = 'transparent'
  }
 
 // ---------ESPACIADO------------
